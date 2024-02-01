@@ -5,11 +5,11 @@
 
 //Constants
 
-#define N 8 //TAILLE_TABLEAU
-#define count 3 //NORMALE
-#define win 1 //GAGNER
-#define lose -1 //PERDU
-#define continuation 0 //CONTINUE
+#define N 8 
+#define count 3 
+#define win 1 
+#define lose -1 
+#define continuation 0 
 
 //Global Variables
 
@@ -18,14 +18,14 @@ char table[N+2][N+2];
 int mine_num,y=0;
 int f_count=0;
 
-void sub_table(); //creer
-void first_table(); //initialiser
-void table_compression(); //afficher_tableau
-void subtable_compression(); //afficher_soustableau
+void sub_table(); 
+void first_table(); 
+void table_compression(); 
+void subtable_compression(); 
 void mine_placement(); //placer
-int coordinate(int line,int column); //cresuer
-void search(int line,int column); //explorer
-int control();//verifier
+int coordinate(int line,int column);
+void search(int line,int column); 
+int control();
 
 void sub_table()
 {
